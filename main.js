@@ -47,8 +47,8 @@ function gotResult(error, results) {
     else {
         document.getElementById("resultEmotionName").innerHTML = results[0].label; 
         document.getElementById("resultEmotionName2").innerHTML = results[1].label; 
-        prediction1 = results[0].label; 
-        prediction2 = results[1].label; 
+        predictionValue = results[0].label; 
+        predictionValue2 = results[1].label; 
         speak();
 
         if(results[0].label == "Felicidade") { 
